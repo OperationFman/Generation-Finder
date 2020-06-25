@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>{{the_title}}</h2>
+
+<form method='POST' action='/calculate'>
+    <table>
+        <p>Enter your birthyear (e.g. '1998')</p>
+        <tr><td>Birth Year:</td><td><input name='birthyear' type='number' width='40'></td></tr>
+    </table>
+    <p><input value='Engage!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
